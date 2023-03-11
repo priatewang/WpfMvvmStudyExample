@@ -31,7 +31,7 @@ namespace WpfComplexClassExample
 
         }
         /// <summary>
-        /// 生成随机数据
+        ///模拟数据（忽略）
         /// </summary>
         void UserDataInit()
         {
