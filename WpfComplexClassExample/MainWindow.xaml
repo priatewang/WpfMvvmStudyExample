@@ -31,11 +31,13 @@
             </ListView.View>
         </ListView>
         <DataGrid
+            Name="DG1"
             Grid.Column="1"
             Margin="19,49,12,75"
             AutoGenerateColumns="False"
             ItemsSource="{Binding Users}"
-            RenderTransformOrigin="0.5,0.5">
+            RenderTransformOrigin="0.5,0.5"
+            SelectedItems="">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Id}" Header="ID" />
                 <DataGridTextColumn Binding="{Binding Name}" Header="姓名" />
@@ -47,14 +49,18 @@
         </DataGrid>
         <ListBox
             Grid.Column="2"
-            Width="317"
-            Height="506"
-            Margin="39,64,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
+            Margin="39,49,60,75"
             d:ItemsSource="{d:SampleData ItemCount=5}"
             DisplayMemberPath="UserName"
             ItemsSource="{Binding Users}" />
+        <Button
+            Grid.Column="1"
+            Margin="307,599,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Command="{Binding MutliCommand}"
+            CommandParameter="{Binding ElementName=DG1, Path=SelectedItems}"
+            Content="Button" />
 
     </Grid>
 </Window>

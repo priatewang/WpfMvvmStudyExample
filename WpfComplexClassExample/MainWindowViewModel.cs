@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using WpfComplexClassExample.Base;
 
 namespace WpfComplexClassExample
@@ -23,6 +25,20 @@ namespace WpfComplexClassExample
                 _users = value;
                 OnPropertyChanged();
             }
+        }
+        
+
+        public ICommand MutliCommand
+        {
+            get => new CommandBase(new Action<object>(o =>
+            {
+                IList list=o as IList;
+                List<User> users=new List<User>();
+                foreach (User item in list)
+                {
+                    users.Add(item);
+                }
+            }));
         }
 
         public MainWindowViewModel()
