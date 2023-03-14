@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfMvvmExample", "WpfMvvmEx
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfComplexClassExample", "WpfComplexClassExample\WpfComplexClassExample.csproj", "{6CDF6010-21D2-4CCF-BFCA-812BB587EE52}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StyletStudy", "StyletStudy\StyletStudy.csproj", "{163DC481-CB5D-45D9-BFB3-372E23FB62C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6CDF6010-21D2-4CCF-BFCA-812BB587EE52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CDF6010-21D2-4CCF-BFCA-812BB587EE52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CDF6010-21D2-4CCF-BFCA-812BB587EE52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{163DC481-CB5D-45D9-BFB3-372E23FB62C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{163DC481-CB5D-45D9-BFB3-372E23FB62C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{163DC481-CB5D-45D9-BFB3-372E23FB62C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{163DC481-CB5D-45D9-BFB3-372E23FB62C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
