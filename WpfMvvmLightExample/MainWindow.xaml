@@ -22,14 +22,22 @@
             Margin="95,29,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
-            Text="{Binding Name}"
+            Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"
             TextWrapping="Wrap" />
         <Button
+            Width="51"
             Margin="243,29,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Command="{Binding ChangeNameCmd}"
-            Content="修改" Width="51" />
+            Content="修改" />
+        <TextBox
+            Width="120"
+            Margin="100,85,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="TextBox"
+            TextWrapping="Wrap" />
 
     </Grid>
 </Window>
