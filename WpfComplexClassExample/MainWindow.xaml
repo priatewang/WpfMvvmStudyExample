@@ -37,7 +37,7 @@
             AutoGenerateColumns="False"
             ItemsSource="{Binding Users}"
             RenderTransformOrigin="0.5,0.5"
-            SelectedItems="">
+           >
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Id}" Header="ID" />
                 <DataGridTextColumn Binding="{Binding Name}" Header="姓名" />
