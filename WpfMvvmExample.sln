@@ -9,10 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfComplexClassExample", "W
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfMvvmLightExample", "WpfMvvmLightExample\WpfMvvmLightExample.csproj", "{AB0CA534-840D-41AE-9738-84116A0DD463}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StyletStudy", "StyletStudy\StyletStudy.csproj", "{163DC481-CB5D-45D9-BFB3-372E23FB62C0}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfStyletExample", "WpfStyletExample\WpfStyletExample.csproj", "{A02DDABF-9C3C-4792-9396-1AFB2081D32D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,14 +27,6 @@ Global
 		{AB0CA534-840D-41AE-9738-84116A0DD463}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB0CA534-840D-41AE-9738-84116A0DD463}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB0CA534-840D-41AE-9738-84116A0DD463}.Release|Any CPU.Build.0 = Release|Any CPU
-		{163DC481-CB5D-45D9-BFB3-372E23FB62C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{163DC481-CB5D-45D9-BFB3-372E23FB62C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{163DC481-CB5D-45D9-BFB3-372E23FB62C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{163DC481-CB5D-45D9-BFB3-372E23FB62C0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A02DDABF-9C3C-4792-9396-1AFB2081D32D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A02DDABF-9C3C-4792-9396-1AFB2081D32D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A02DDABF-9C3C-4792-9396-1AFB2081D32D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A02DDABF-9C3C-4792-9396-1AFB2081D32D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
