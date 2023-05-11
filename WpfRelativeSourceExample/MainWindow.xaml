@@ -1,0 +1,70 @@
+﻿<Window
+    x:Class="WpfRelativeSourceExample.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WpfRelativeSourceExample"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <Grid>
+        <!--  绑定父级 FindAncestor模式  -->
+        <StackPanel Background="LightGray" Visibility="Collapsed">
+            <Grid
+                Width="768"
+                Height="380"
+                Margin="0,27,0,0"
+                HorizontalAlignment="Left"
+                Background="Gray">
+                <Grid
+                    Width="396"
+                    Height="344"
+                    Margin="0,36,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Background="Linen">
+                    <Canvas
+                        Width="223"
+                        Margin="0,53,0,0"
+                        HorizontalAlignment="Left"
+                        Background="DarkCyan">
+                        <Button
+                            Canvas.Top="56"
+                            Width="{Binding Width, RelativeSource={RelativeSource Mode=FindAncestor, AncestorLevel=2, AncestorType=Grid}}"
+                            Height="100"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Top"
+                            Content="Button" />
+                    </Canvas>
+
+                </Grid>
+
+            </Grid>
+        </StackPanel>
+        <!--  模板绑定 TemplatedParent模式  -->
+        <Button
+            Margin="49,60,0,0"
+            Padding="10"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Button">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter Margin="{Binding Path=Padding, RelativeSource={RelativeSource TemplatedParent}}" Content="{TemplateBinding Content}" />
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+        </Button>
+        <!--  ViewModel改变模式  -->
+        <local:UserManageUC Margin="224,0,0,0" DataContext="{Binding UserManage}" />
+    </Grid>
+</Window>
